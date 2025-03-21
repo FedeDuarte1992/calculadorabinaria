@@ -10,27 +10,34 @@
     <div class="container">
         <h1>Convertidor Decimal a Binario</h1>
         <form id="convert-form">
-            <label for="decimalInput">Número Decimal:</label>
-            <input type="number" id="decimalInput" required>
+            <label for="conversionType">Tipo de conversión:</label>
+            <select id="conversionType">
+                <option value="decToBin">Decimal → Binario</option>
+                <option value="binToDec">Binario → Decimal</option>
+            </select>
+        
+            <label for="decimalInput">Número:</label>
+            <input type="text" id="decimalInput" required>
             <button type="submit">Convertir</button>
         </form>
-
+        
+        <!-- Tabla de pasos (puede usarse para ambos tipos) -->
         <table id="conversionTable" class="hidden">
-            <thead>
-                <tr>
-                    <th>División</th>
-                    <th>Cociente</th>
-                    <th>Residuo</th>
-                </tr>
+            <thead id="tableHeader">
+                <!-- Se rellenará dinámicamente -->
             </thead>
             <tbody>
-                <!-- Los resultados se mostrarán aquí -->
+                <!-- Se rellenará dinámicamente -->
             </tbody>
         </table>
-
+        
         <div id="result">
-            <h2>Resultado Binario: <span id="binaryResult"></span></h2>
+            <h2>Resultado: <span id="binaryResult"></span></h2>
         </div>
+
+        <!-- Solo muestra lo nuevo/modificado -->
+
+
 
         <script src="script.js"></script>
     </div>
