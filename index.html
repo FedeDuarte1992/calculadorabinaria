@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Binaria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Convertidor Decimal a Binario</h1>
+        <form id="convert-form">
+            <label for="decimalInput">Número Decimal:</label>
+            <input type="number" id="decimalInput" required>
+            <button type="submit">Convertir</button>
+        </form>
+
+        <table id="conversionTable" class="hidden">
+            <thead>
+                <tr>
+                    <th>División</th>
+                    <th>Cociente</th>
+                    <th>Residuo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Los resultados se mostrarán aquí -->
+            </tbody>
+        </table>
+
+        <div id="result">
+            <h2>Resultado Binario: <span id="binaryResult"></span></h2>
+        </div>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
